@@ -1,0 +1,32 @@
+{
+  "name": "tree-sitter-apex",
+  "version": "1.0.0",
+  "description": "tree sitter for apex",
+  "main": "bindings/node",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nan": "^2.17.0"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.apex",
+      "file-types": [
+        "cls",
+        "trigger",
+        "apex"
+      ],
+      "highlights": [
+        "../soql/queries/highlights.scm",
+        "../sosl/queries/highlights.scm",
+        "queries/highlights.scm"
+      ],
+      "tags": [
+        "queries/tags.scm"
+      ]
+    }
+  ]
+}
